@@ -1,0 +1,164 @@
+@import "../styles/common.css";
+
+.screen {
+  width: var(--screen-width);
+  min-height: 3157px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.headerWrap { left: 0; top: 0; width: 1920px; height: 766px; position: absolute; }
+.headerBg { background: var(--color-1a1a1a); position: absolute; left:0; top:0; width:1920px; height:766px; }
+.headerOverlay { background: #cde6f0; border: 1px solid #74c5f2; opacity: 1; position: absolute; left:0; top:0; width:1920px; height:766px; }
+.headerBar { position: absolute; left: 277px; top: 63px; width: 1278px; }
+
+.heroTitle { left: 547px; top: 306px; width: 827px; height: 224px; font-family: var(--font-roboto); font-size: 50px; line-height: 71.04px; font-weight: 600; color: var(--color-black); }
+.heroSub { left: 888px; top: 292px; width: 144px; height: 27px; font-family: var(--font-roboto); font-size: 15px; line-height: 20px; font-weight: 600; color: var(--color-343434); }
+.smallTriangle { position: absolute; left: 1024px; top: 90px; width: 11.6px; height: 7.48px; background: #86a5ce; border-radius: 50px; }
+
+.tabsBg { left: 277px; top: 748px; width: 1328px; height: 141px; position: absolute; background: #eadbc8; border-radius: 100px; opacity: 0.8; }
+.seg { position: absolute; background: #eadbc8; opacity: 0.8; border-radius: 100px; }
+.seg1 { left: 277px; top: 748px; width: 318px; height: 141px; }
+.seg2 { left: 595px; top: 748px; width: 318px; height: 141px; }
+.seg3 { left: 913px; top: 748px; width: 318px; height: 141px; }
+.seg4 { left: 1231px; top: 748px; width: 374px; height: 141px; }
+
+.tabIcon { left: 277px; top: 748px; width: 26px; height: 26px; background: transparent; }
+.tabLabel { left: 428px; top: 804px; position: absolute; font-family: var(--font-roboto); font-size: 20px; line-height: 36px; font-weight: 500; color: #012438; }
+
+.sortIcon { position: absolute; width: 26px; height: 26px; background: var(--color-black); border-radius: 6px; }
+.nameIcon { position: absolute; width: 26px; height: 26px; background: var(--color-black); border-radius: 6px; }
+.sortLabel { position: absolute; font-family: var(--font-roboto); font-size: 20px; line-height: 30px; font-weight: 700; color: #012438; }
+
+.leftPaneBg { left: 277px; top: 887px; width: 1328px; height: 1641px; position: absolute; background: #bed6e9; border: 1px solid #021b2b; }
+
+/* Plan card */
+.planCard { left: 1085px; top: 929px; width: 481px; height: 728px; position: absolute; }
+.cardBg { position: absolute; left: 0; top: 0; width: 481px; height: 728px; background: #010a0f; border-radius: 21px; }
+.cardTitle { position: absolute; left: 96px; top: 34px; font-family: var(--font-roboto); font-size: 42px; line-height: 54.18px; font-weight: 700; color: var(--color-181e4b); }
+.cardDesc { position: absolute; left: 38px; top: 102px; width: 401px; height: 76px; font-family: var(--font-roboto); font-size: 16px; line-height: 26px; color: var(--color-black); text-align: center; }
+.field { position: absolute; width: 359px; height: 76px; background: var(--color-white); border-radius: 21px; }
+.icon { position: absolute; width: 20px; height: 20px; background: var(--color-black); border-radius: 4px; }
+.search {} .location {} .calendar {}
+.fLabel { position: absolute; font-family: var(--font-roboto); font-size: 22px; line-height: 25.78px; font-weight: 600; color: var(--color-black); }
+
+.priceFilter { position: absolute; left: 61px; top: 430px; width: 359px; height: 110px; }
+.sliderTrack { position: absolute; left: 0; top: 52px; width: 359px; height: 41px; background: var(--color-white); }
+.sliderHandle { position: absolute; top: 52px; width: 40px; height: 41px; background: #86a5ce; border-radius: 50px; }
+.left { left: 0; } .right { left: 319px; }
+.sliderTitle { position: absolute; left: 0; top: 8px; font-family: var(--font-roboto); font-size: 20px; line-height: 30px; font-weight: 700; color: #012438; }
+.sliderValue { position: absolute; left: 0; top: 88px; font-family: var(--font-roboto); font-size: 22px; line-height: 25.78px; font-weight: 600; color: var(--color-black); }
+.bookNow { width: 176.56px; height: 56.42px; background: var(--color-df6951); color: var(--color-white); border-radius: 10px; font-family: var(--font-poppins); font-size: 16.72px; font-weight: 600; line-height: 25.07px; box-shadow: 0 15.28px 26.74px rgba(223,105,81,1); border: none; }
+
+/* Cards grid positions */
+.pkgCard {}
+.cardA { left: 259px; top: 929px; width: 371px; height: 515px; }
+.cardA .cardBg { border: none; }
+.cardA .thumb { left: 21.62px; top: 21.62px; width: 328.67px; height: 256.23px; position: absolute; background: var(--color-d9d9d9); }
+.cardA .thumbMask { left: 21.62px; top: 277.86px; width: 328.67px; height: 36.76px; position: absolute; background: #86a5ce; border-radius: 50px; }
+.cardA .thumbDate { position: absolute; left: 70.02px; top: 286.59px; font-family: var(--font-poppins); font-size: 12.97px; line-height: 19.46px; color: var(--color-white); }
+.cardA .thumbPeople { position: absolute; left: 249.49px; top: 286.59px; font-family: var(--font-poppins); font-size: 12.97px; line-height: 19.46px; color: var(--color-white); }
+.cardA .title { position: absolute; left: 44.33px; top: 340.57px; font-family: var(--font-volkhov); font-size: 34.19px; line-height: 44.10px; font-weight: 700; color: var(--color-181e4b); }
+.cardA .desc { position: absolute; left: 44.33px; top: 391.94px; width: 328.67px; height: 78.92px; font-family: var(--font-poppins); font-size: 17.30px; line-height: 25.95px; color: var(--color-181e4b); }
+.cardA .price { position: absolute; left: 46.33px; top: 461.81px; font-family: var(--font-poppins); font-size: 17.30px; line-height: 25.95px; font-weight: 500; color: #262626; }
+.cardA .ratingIcon { position: absolute; left: 118.93px; top: 466.14px; width: 17.30px; height: 16.22px; background: #86a5ce; border-radius: 50px; }
+.cardA .rating { position: absolute; left: 137.22px; top: 461.81px; font-family: var(--font-poppins); font-size: 17.30px; line-height: 25.95px; font-weight: 500; color: #262626; }
+.cardA .dateIcon { position: absolute; left: 44.33px; top: 286.59px; width: 17.30px; height: 17.30px; background: var(--color-white); }
+.cardA .peopleIcon { position: absolute; left: 224.88px; top: 287.67px; width: 15.34px; height: 14.42px; background: #d9fefc; }
+
+.cardB { left: 709px; top: 988px; width: 325px; height: 429px; }
+.cardB .thumb { left: 0; top: 0; width: 304px; height: 237px; position: absolute; background: var(--color-d9d9d9); }
+.cardB .thumbMask { left: 0; top: 237px; width: 304px; height: 34px; position: absolute; background: #86a5ce; border-radius: 50px; }
+.cardB .thumbDate { position: absolute; left: 45px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardB .thumbPeople { position: absolute; left: 211px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardB .title { position: absolute; left: 21px; top: 295px; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.cardB .desc { position: absolute; left: 21px; top: 338px; width: 304px; height: 73px; font-family: var(--font-poppins); font-size: 16px; line-height: 24px; color: var(--color-181e4b); }
+.cardB .price { position: absolute; left: 22px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardB .ratingIcon { position: absolute; left: 108px; top: 409px; width: 16px; height: 15px; background: #86a5ce; border-radius: 50px; }
+.cardB .rating { position: absolute; left: 135px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardB .dateIcon { position: absolute; left: 21px; top: 246px; width: 16px; height: 16px; background: var(--color-white); }
+.cardB .peopleIcon { position: absolute; left: 188px; top: 247px; width: 14.19px; height: 13.33px; background: #d9fefc; }
+
+.cardC { left: 324px; top: 1489px; width: 325px; height: 429px; }
+.cardC .thumb { left: 0; top: 0; width: 304px; height: 237px; position: absolute; background: var(--color-d9d9d9); }
+.cardC .thumbMask { left: 0; top: 237px; width: 304px; height: 34px; position: absolute; background: #86a5ce; border-radius: 50px; }
+.cardC .thumbDate { position: absolute; left: 45px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardC .thumbPeople { position: absolute; left: 211px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardC .title { position: absolute; left: 21px; top: 295px; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.cardC .desc { position: absolute; left: 21px; top: 338px; width: 304px; height: 73px; font-family: var(--font-poppins); font-size: 16px; line-height: 24px; color: var(--color-181e4b); }
+.cardC .price { position: absolute; left: 19px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardC .ratingIcon { position: absolute; left: 90px; top: 409px; width: 16px; height: 15px; background: #86a5ce; border-radius: 50px; }
+.cardC .rating { position: absolute; left: 116px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardC .dateIcon { position: absolute; left: 21px; top: 246px; width: 16px; height: 16px; background: var(--color-white); }
+.cardC .peopleIcon { position: absolute; left: 188px; top: 247px; width: 14.19px; height: 13.33px; background: #d9fefc; }
+
+.cardD { left: 709px; top: 1489px; width: 325px; height: 429px; }
+.cardD .thumb { left: 0; top: 0; width: 304px; height: 237px; position: absolute; background: var(--color-d9d9d9); }
+.cardD .thumbMask { left: 0; top: 237px; width: 304px; height: 34px; position: absolute; background: #86a5ce; border-radius: 50px; }
+.cardD .thumbDate { position: absolute; left: 45px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardD .thumbPeople { position: absolute; left: 211px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardD .title { position: absolute; left: 21px; top: 295px; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.cardD .desc { position: absolute; left: 21px; top: 338px; width: 304px; height: 73px; font-family: var(--font-poppins); font-size: 16px; line-height: 24px; color: var(--color-181e4b); }
+.cardD .price { position: absolute; left: 19px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardD .ratingIcon { position: absolute; left: 90px; top: 409px; width: 16px; height: 15px; background: #86a5ce; border-radius: 50px; }
+.cardD .rating { position: absolute; left: 116px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardD .dateIcon { position: absolute; left: 21px; top: 246px; width: 16px; height: 16px; background: var(--color-white); }
+.cardD .peopleIcon { position: absolute; left: 188px; top: 247px; width: 14.19px; height: 13.33px; background: #d9fefc; }
+
+.cardE { left: 324px; top: 1983px; width: 325px; height: 429px; }
+.cardE .thumb { left: 0; top: 0; width: 304px; height: 237px; position: absolute; background: var(--color-d9d9d9); }
+.cardE .thumbMask { left: 0; top: 237px; width: 304px; height: 34px; position: absolute; background: #86a5ce; border-radius: 50px; }
+.cardE .thumbDate { position: absolute; left: 45px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardE .thumbPeople { position: absolute; left: 211px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardE .title { position: absolute; left: 21px; top: 295px; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.cardE .desc { position: absolute; left: 21px; top: 338px; width: 304px; height: 73px; font-family: var(--font-poppins); font-size: 16px; line-height: 24px; color: var(--color-181e4b); }
+.cardE .price { position: absolute; left: 21px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardE .ratingIcon { position: absolute; left: 92px; top: 409px; width: 16px; height: 15px; background: #86a5ce; border-radius: 50px; }
+.cardE .rating { position: absolute; left: 118px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardE .dateIcon { position: absolute; left: 21px; top: 246px; width: 16px; height: 16px; background: var(--color-white); }
+.cardE .peopleIcon { position: absolute; left: 188px; top: 247px; width: 14.19px; height: 13.33px; background: #d9fefc; }
+
+.cardF { left: 709px; top: 1983px; width: 325px; height: 429px; }
+.cardF .thumb { left: 0; top: 0; width: 304px; height: 237px; position: absolute; background: var(--color-d9d9d9); }
+.cardF .thumbMask { left: 0; top: 237px; width: 304px; height: 34px; position: absolute; background: #86a5ce; border-radius: 50px; }
+.cardF .thumbDate { position: absolute; left: 45px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardF .thumbPeople { position: absolute; left: 211px; top: 246px; font-family: var(--font-poppins); font-size: 12px; line-height: 18px; color: var(--color-white); }
+.cardF .title { position: absolute; left: 21px; top: 295px; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.cardF .desc { position: absolute; left: 21px; top: 338px; width: 304px; height: 73px; font-family: var(--font-poppins); font-size: 16px; line-height: 24px; color: var(--color-181e4b); }
+.cardF .price { position: absolute; left: 24px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardF .ratingIcon { position: absolute; left: 95px; top: 409px; width: 16px; height: 15px; background: #86a5ce; border-radius: 50px; }
+.cardF .rating { position: absolute; left: 121px; top: 405px; font-family: var(--font-poppins); font-size: 23px; line-height: 26.95px; color: #262626; }
+.cardF .dateIcon { position: absolute; left: 21px; top: 246px; width: 16px; height: 16px; background: var(--color-white); }
+.cardF .peopleIcon { position: absolute; left: 188px; top: 247px; width: 14.19px; height: 13.33px; background: #d9fefc; }
+
+.paginationCurrent { left: 616px; top: 2435px; width: 30px; height: 30px; border-radius: 50%; background: var(--color-white); border: 3px solid #0762b5; position: absolute; }
+.pagination { left: 589px; top: 2438px; display: flex; align-items: center; gap: 18px; position: absolute; font-family: var(--font-poppins); font-size: 16px; line-height: 24px; color: var(--color-181e4b); }
+.pNum { margin-right: 18px; }
+.chev { display: inline-block; width: 16px; height: 16px; background: var(--color-black); border-radius: 2px; }
+.right { margin-left: 12px; }
+.left { margin-right: 12px; }
+
+/* Footer */
+.footer { left: 277px; top: 2673px; width: 1643px; height: 484px; position: absolute; }
+.footerImg { position: absolute; left: 967px; top: -106px; width: 676px; height: 484px; background: rgba(24,20,51,0.07); }
+.footerLinks { position: absolute; left: 0; top: 94px; width: 1202px; height: 346px; }
+.footerLogo { position: absolute; left: 0; top: 0; width: 127px; height: 64px; }
+.footerLogoText { position: absolute; left: 0; top: 0; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.footerLogoArrow { position: absolute; left: 28px; top: 26px; width: 98.6px; height: 38.14px; }
+.footerCol { position: absolute; }
+.company { left: 291px; top: 21px; width: 97px; }
+.destinations { left: 525px; top: 21px; width: 132px; }
+.newsletter { left: 813px; top: 21px; width: 389px; }
+.colTitle { font-family: var(--font-manrope); font-size: 21px; font-weight: 700; line-height: 24px; color: var(--color-181433); margin-bottom: 24px; }
+.colItem { font-family: var(--font-manrope); font-size: 16px; font-weight: 500; line-height: 24px; color: var(--color-181433); margin-bottom: 18px; }
+.newsletterInput { position: relative; width: 389px; height: 52px; margin-top: 24px; }
+.newsletterBg { position: absolute; inset: 0; background: var(--color-eeeeff); }
+.newsletterPlaceholder { position: absolute; left: 15px; top: 13px; font-family: var(--font-manrope); font-size: 16px; line-height: 26px; color: var(--color-757095); opacity: .8; }
+.newsletterSubmit { position: absolute; right: 0; top: 0; width: 149px; height: 52px; background: var(--color-df6951); color: var(--color-white); border-radius: 10px; box-shadow: 0 20px 35px rgba(223,105,81,1); font-family: var(--font-poppins); font-size: 16px; font-weight: 600; border: none; }
+.newsletterNote { position: absolute; left: 0; top: 95px; width: 329px; height: 52px; font-family: var(--font-manrope); font-size: 16px; line-height: 28px; color: var(--color-757095); opacity: .5; white-space: pre-line; }
+.footerAbout { position: absolute; left: 0; top: 66px; width: 213px; }
+.aboutText { font-family: var(--font-manrope); font-size: 16px; line-height: 28px; color: var(--color-757095); }
+.socials { position: absolute; left: 0; top: 152px; width: 128px; height: 20px; display: flex; gap: 24px; }
+.soc { width: 20px; height: 20px; background: var(--color-df6951); border-radius: 50%; }
+.footerDivider { position: absolute; left: 0; top: 372px; width: 1200px; height: 2px; background: var(--color-e5e5ea); }
+.footerCopy { position: absolute; left: 456px; top: 414px; font-family: var(--font-manrope); font-size: 16px; line-height: 26px; color: var(--color-181433); }

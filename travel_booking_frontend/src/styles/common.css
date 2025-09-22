@@ -1,0 +1,103 @@
+:root {
+  /* Colors from design system */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-181433: #181433;
+  --color-e5e5ea: #e5e5ea;
+  --color-eeeeff: #eeeeff;
+  --color-df6951: #df6951;
+  --color-757095: #757095;
+  --color-181e4b: #181e4b;
+  --color-d9d9d9: #d9d9d9;
+  --color-737373: #737373;
+  --color-ffefec: #ffefec;
+  --color-c4c4c4: #c4c4c4;
+  --color-ff7152: #ff7152;
+  --color-6246e5: #6246e5;
+  --color-59b1e6: #59b1e6;
+  --color-f5f5f5: #f5f5f5;
+  --color-9ca0b0: #9ca0b0;
+  --color-84829a: #84829a;
+  --color-080809: #080809;
+  --color-f0bb1f: #f0bb1f;
+  --color-5e6282: #5e6282;
+  --color-006380: #006380;
+  --color-f15a2b: #f15a2b;
+  --color-fff1da: #fff1da;
+  --color-1e1d4c: #1e1d4c;
+  --color-f3f3f3: #f3f3f3;
+  --color-d0d0d0: #d0d0d0;
+  --color-f7f7f7: #f7f7f7;
+  --color-868686: #868686;
+  --color-f8f8f8: #f8f8f8;
+  --color-2f2f2f: #2f2f2f;
+  --color-7d7d7d: #7d7d7d;
+  --color-ffba0a: #ffba0a;
+  --color-1a1a1a: #1a1a1a;
+  --color-40a2e9: #40a2e9;
+  --color-262626: #262626;
+  --color-343434: #343434;
+  --color-111111: #111111;
+  --color-ededed: #ededed;
+  --color-a0a0a0: #a0a0a0;
+  --color-ebebeb: #ebebeb;
+  --color-525252: #525252;
+  --color-383838: #383838;
+  --color-5bffd8: #5bffd8;
+  --color-f4f4f4: #f4f4f4;
+  --color-4b4b4b: #4b4b4b;
+  --color-969696: #969696;
+  --color-65558f: #65558f;
+  --color-242323: #242323;
+  --color-1e1e1e: #1e1e1e;
+
+  /* Shadows */
+  --shadow-soft: 0 20px 35px 0 rgba(223, 105, 81, 1);
+  --shadow-card-sm: 0 1.852px 3.148px 0 rgba(0,0,0,1), 0 8.148px 6.519px 0 rgba(0,0,0,1), 0 20px 13px 0 rgba(0,0,0,1);
+  --shadow-huge: 0 56.416px 87.758px 0 rgba(1,22,24,1);
+  --shadow-input: 1px 9px 6px rgba(105,104,104,1);
+
+  /* Typography stacks */
+  --font-manrope: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-poppins: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-volkhov: "Volkhov", Georgia, "Times New Roman", serif;
+  --font-roboto: "Roboto", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-circular: "Circular Std", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-yesteryear: "Yesteryear", cursive;
+
+  --screen-width: 1920px;
+}
+
+* { box-sizing: border-box; }
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--color-white);
+}
+
+.screenRoot {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: auto;
+  background: var(--color-white);
+}
+
+.abs { position: absolute; }
+.rect { background: transparent; }
+.ellipse { border-radius: 50%; background: transparent; }
+
+.text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+}

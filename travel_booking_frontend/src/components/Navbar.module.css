@@ -1,0 +1,52 @@
+@import "../styles/common.css";
+
+.topnav {
+  position: relative;
+  margin: 0 auto;
+  width: 1278px;
+  height: 67px;
+  display: grid;
+  grid-template-columns: 260px 1fr 200px;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.logoWrap { position: relative; height: 64px; }
+.logoText {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100px; height: 41px;
+  font-family: var(--font-volkhov);
+  font-size: 31.62px; line-height: 40.79px; font-weight: 700;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.logoArrow {
+  position: absolute;
+  left: 28px; top: 26px;
+  width: 98.6px; height: 38.14px;
+  background: transparent;
+}
+.navItems { display: flex; gap: 48px; justify-content: center; }
+.navLink {
+  font-family: var(--font-poppins);
+  font-size: 17px; line-height: 35.16px; font-weight: 300;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.navLink.active { color: var(--color-df6951); }
+.ctaWrap { display: flex; justify-content: flex-end; }
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px; height: 58px;
+  background: var(--color-df6951);
+  border-radius: 10px;
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+  font-size: 17px; font-weight: 500; line-height: 21.5px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255,255,255,0.2);
+  text-decoration: none;
+}

@@ -1,48 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
+import './styles/common.css';
+import Homepage from './pages/Homepage';
+import CreatePackage from './pages/CreatePackage';
+import PackagesArchive from './pages/PackagesArchive';
+import PackageDetail from './pages/PackageDetail';
 
-// PUBLIC_INTERFACE
+/**
+ * PUBLIC_INTERFACE
+ * App entry: sets up client-side routing for the screens.
+ */
 function App() {
-  const [theme, setTheme] = useState('light');
-
-  // Effect to apply theme to document element
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  // PUBLIC_INTERFACE
-  const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <button 
-          className="theme-toggle" 
-          onClick={toggleTheme}
-          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        >
-          {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
-        </button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Current theme: <strong>{theme}</strong>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/create" element={<CreatePackage />} />
+        <Route path="/packages" element={<PackagesArchive />} />
+        <Route path="/packages/:slug" element={<PackageDetail />} />
+        {/* basic placeholders for nav items not in scope */}
+        <Route path="/about" element={<Homepage />} />
+        <Route path="/services" element={<Homepage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

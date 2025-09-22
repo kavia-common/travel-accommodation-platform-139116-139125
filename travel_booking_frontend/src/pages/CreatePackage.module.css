@@ -1,0 +1,162 @@
+@import "../styles/common.css";
+
+.screen {
+  width: var(--screen-width);
+  min-height: 2800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.headerCanvas {
+  position: absolute;
+  left: 0; top: 0;
+  width: 1920px; height: 976px;
+  background: var(--color-1a1a1a);
+}
+
+.headerBar {
+  position: absolute;
+  left: 321px; top: 63px;
+  width: 1278px;
+}
+
+.buildCard {
+  left: 715px; top: 168px; width: 542px; height: 736px;
+}
+.cardBg {
+  position: absolute; inset: 0;
+  background: var(--color-white);
+  border: 3px solid var(--color-65558f);
+  border-radius: 12.1464px;
+}
+.cardTitle {
+  position: absolute; left: 59px; top: 40px;
+  font-family: var(--font-volkhov);
+  font-size: 28.92px; line-height: 41.09px; font-weight: 700;
+  color: var(--color-181e4b);
+}
+
+.field { position: absolute; width: 467.347px; height: 79.819px; }
+.fieldRect {
+  position: absolute; inset: 0;
+  border-radius: 5.784px;
+  border: 0.5784px solid var(--color-black);
+  background: transparent;
+}
+.fieldValue {
+  position: absolute; top: 18px; left: 12px;
+  font-family: var(--font-poppins);
+  font-size: 24.8712px; line-height: 37.3068px; font-weight: 400;
+  color: var(--color-1e1d4c);
+}
+.hint {
+  position: absolute;
+  font-family: var(--font-poppins);
+  font-size: 11.568px; line-height: 17.352px; font-weight: 400;
+  color: var(--color-black);
+}
+.infoIcon {
+  position: absolute; width: 19.6656px; height: 19.6656px;
+  background: var(--color-black);
+  border-radius: 50%;
+  opacity: 0.8;
+  right: 12px; top: 12px;
+}
+
+.row2col { position: absolute; width: 467.347px; height: 79.819px; }
+.smallField { width: 257.68px; height: 79.819px; }
+.colDivider { position: absolute; left: 254.72px; top: 0; width: 1px; height: 79.819px; background: var(--color-black); }
+.chevronUp, .chevronDown {
+  position: absolute; width: 14.304px; height: 8.924px; right: 12px; top: 36px;
+  background: var(--color-black);
+  border-radius: 2px;
+}
+
+.addDestination {
+  position: absolute;
+  font-family: var(--font-poppins);
+  font-size: 12.7248px; line-height: 19.0872px; font-weight: 600;
+  color: var(--color-40a2e9);
+}
+
+.activitiesTitle {
+  position: absolute;
+  font-family: var(--font-poppins);
+  font-size: 12.7248px; line-height: 19.0872px; font-weight: 600;
+  color: var(--color-df6951);
+}
+.activities { position: absolute; display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 28px; }
+.col { display: grid; row-gap: 14px; }
+.chk.item { display: inline-flex; align-items: center; gap: 10px; height: 21px; }
+.box { display: inline-block; width: 16px; height: 17px; border: 0.5784px solid var(--color-black); border-radius: 4.0488px; background: transparent; }
+.checked .box { background: var(--color-df6951); position: relative; }
+.tick::after { content: ""; position: absolute; left: 3px; top: 3px; width: 10px; height: 10px; background: var(--color-white); border-radius: 2px; }
+.optLabel { font-family: var(--font-poppins); font-size: 14px; line-height: 21px; font-weight: 400; color: var(--color-black); }
+.onlytext .box { display: none; }
+
+.buildBtn {
+  position: absolute;
+  width: 171.7848px; height: 43.9584px;
+  background: var(--color-df6951);
+  color: var(--color-white);
+  border-radius: 5.784px;
+  font-family: var(--font-poppins);
+  font-size: 12.7248px; line-height: 19.0872px; font-weight: 600;
+  box-shadow: 0 11.568px 20.244px rgba(223,105,81,1);
+}
+
+.partnersStrip { left: 0; top: 976px; width: 1920px; height: 200px; position: absolute; background: rgba(0,0,0,0.2); }
+.partner { position: absolute; top: 75px; height: 50px; background: var(--color-737373); }
+.p1 { left: 227px; width: 143px; }
+.p2 { left: 631px; width: 165px; }
+.p3 { left: 960px; width: 160px; }
+.p4 { left: 1299px; width: 172px; }
+.p5 { left: 1600px; width: 221px; }
+
+.exploreRow { left: 0; top: 1428px; width: 1920px; height:399px; position: absolute; display: grid; grid-template-columns: 1fr 1fr; }
+.exploreCard { position: relative; }
+.bg { position: absolute; inset: 0; background: var(--color-d9d9d9); }
+.overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.3); }
+.content { position: absolute; left: 292px; top: 124px; width: 405px; }
+.sub { font-family: var(--font-poppins); font-size: 18px; font-weight: 700; letter-spacing: 1.8px; color: var(--color-ffefec); }
+.title { margin-top: 20px; font-family: var(--font-volkhov); font-size: 50px; line-height: 71.04px; font-weight: 700; color: var(--color-white); }
+.line { margin-top: 16px; width: 200px; height: 20px; }
+.cta { margin-top: 24px; width: 176.56px; height: 56.42px; background: var(--color-df6951); color: var(--color-white); border-radius: 36px; font-family: var(--font-poppins); font-size: 16.72px; font-weight: 600; line-height: 25.07px; box-shadow: 0 15.28px 26.74px rgba(223,105,81,1); }
+
+.testimonials { left: 639px; top: 1827px; width: 639px; height: 576.95px; position: absolute; }
+.titleSub { position: absolute; left: 513px; top: 0; width: 126px; height: 27px; font-family: var(--font-poppins); font-size: 18px; font-weight: 700; letter-spacing: 1.8px; color: var(--color-df6951); text-align: right; }
+.title { position: absolute; left: 0; top: 29px; width: 639px; height: 142px; font-family: var(--font-volkhov); font-size: 50px; line-height: 71.04px; font-weight: 700; color: var(--color-181e4b); }
+.testiCard { position: absolute; left: 20px; top: 206px; width: 600px; height: 337px; }
+.testiCardBg { position: absolute; left: 0; top: 60px; width: 538px; height: 277px; background: var(--color-white); border-radius: 17px; }
+.testiQuote1 { position: absolute; left: 43px; top: 117px; width: 82px; height: 82px; }
+.testiQuote2 { position: absolute; left: 324px; top: 253px; width: 12px; height: 12px; }
+.testiAvatar { position: absolute; left: 209px; top: 0; width: 120px; height: 120px; border-radius: 50%; background: var(--color-white); box-shadow: 0 0 0 6px var(--color-white) inset; }
+.testiText { position: absolute; left: 73px; top: 152px; width: 393px; height: 114px; font-family: var(--font-poppins); font-size: 12.22px; line-height: 24.45px; color: var(--color-black); }
+.testiAuthor { position: absolute; left: 170px; top: 279px; font-family: var(--font-poppins); font-size: 12.22px; font-weight: 700; line-height: 24.45px; color: var(--color-black); }
+.testiPagination { position: absolute; left: 256px; top: 575px; width: 128px; height: 2px; display: flex; gap: 32px; }
+.testiPagination .p1, .testiPagination .p2, .testiPagination .p3 { width: 31.25px; height: 1.95px; background: #242323; }
+.testiPagination .p2 { opacity: .5; }
+
+.footer { left: 188px; top: 2280px; width:1544px; height:484px; position: absolute; }
+.footerImg { position: absolute; left: 943px; top: 0; width: 577px; height: 484px; background: rgba(24,20,51,0.07); }
+.footerLogo { position: absolute; left: 0; top: 94px; width: 127px; height: 64px; }
+.footerLogoText { position: absolute; left: 0; top: 0; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.footerLogoArrow { position: absolute; left: 28px; top: 26px; width: 98.6px; height: 38.14px; }
+.footerLinks { position: absolute; left: 0; top: 21px; width: 1202px; height: 346px; }
+.footerCol { position: absolute; }
+.company { left: 291px; top: 21px; width: 97px; }
+.destinations { left: 525px; top: 21px; width: 132px; }
+.newsletter { left: 813px; top: 21px; width: 389px; }
+.colTitle { font-family: var(--font-manrope); font-size: 21px; font-weight: 700; line-height: 24px; color: var(--color-181433); margin-bottom: 24px; }
+.colItem { font-family: var(--font-manrope); font-size: 16px; font-weight: 500; line-height: 24px; color: var(--color-181433); margin-bottom: 18px; }
+.newsletterInput { position: relative; width: 389px; height: 52px; margin-top: 24px; }
+.newsletterBg { position: absolute; inset: 0; background: var(--color-eeeeff); }
+.newsletterPlaceholder { position: absolute; left: 15px; top: 13px; font-family: var(--font-manrope); font-size: 16px; line-height: 26px; color: var(--color-757095); opacity: .8; }
+.newsletterSubmit { position: absolute; right: 0; top: 0; width: 149px; height: 52px; background: var(--color-df6951); color: var(--color-white); border-radius: 10px; box-shadow: 0 20px 35px rgba(223,105,81,1); font-family: var(--font-poppins); font-size: 16px; font-weight: 600; }
+.newsletterNote { position: absolute; left: 0; top: 95px; width: 329px; height: 52px; font-family: var(--font-manrope); font-size: 16px; line-height: 28px; color: var(--color-757095); opacity: .5; white-space: pre-line; }
+.footerAbout { position: absolute; left: 0; top: 66px; width: 213px; }
+.aboutText { font-family: var(--font-manrope); font-size: 16px; line-height: 28px; color: var(--color-757095); }
+.socials { position: absolute; left: 0; top: 152px; width: 128px; height: 20px; display: flex; gap: 24px; }
+.soc { width: 20px; height: 20px; background: var(--color-df6951); border-radius: 50%; }
+.footerDivider { position: absolute; left: 0; top: 372px; width: 1200px; height: 2px; background: var(--color-e5e5ea); }
+.footerCopy { position: absolute; left: 456px; top: 414px; font-family: var(--font-manrope); font-size: 16px; line-height: 26px; color: var(--color-181433); }

@@ -1,0 +1,102 @@
+@import "../styles/common.css";
+
+.screen {
+  width: var(--screen-width);
+  min-height: 3196px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Header */
+.headerWrap { left: 0; top: 0; width: 1920px; height: 763px; position: absolute; }
+.headerBase { position: absolute; left:0; top:0; width:1920px; height:763px; background: var(--color-1a1a1a); }
+.headerOverlay { position: absolute; left:0; top:3px; width:1920px; height:760px; background: #cde6f0; opacity: 0; }
+.headerBar { position: absolute; left: 321px; top: 63px; width: 1278px; }
+
+/* Tabs */
+.tabsBg { left: 277px; top: 284px; width: 1328px; height: 141px; position: absolute; background: #eadbc8; border-radius: 100px; opacity: 0.8; }
+.tab { position: absolute; }
+.information { left: 277px; top: 284px; width: 318px; height: 141px; }
+.tourplan { left: 595px; top: 284px; width: 318px; height: 141px; }
+.location { left: 913px; top: 284px; width: 318px; height: 141px; }
+.gallery { left: 1231px; top: 284px; width: 374px; height: 141px; }
+.active { background: var(--color-white); border-radius: 100px; }
+.tabLabel { position: absolute; left: 84px; top: 56px; font-family: var(--font-roboto); font-size: 20px; line-height: 36px; font-weight: 500; color: #012438; }
+.tabIcon { position: absolute; width: 26px; height: 26px; left: 30px; top: 55px; }
+.info { background: var(--color-black); border-radius: 50%; }
+.calendar { background: var(--color-black); border-radius: 6px; }
+.locationIcon { background: #124e7b; border-radius: 6px; }
+.galleryIcon { background: var(--color-black); border-radius: 6px; }
+
+/* Left pane background */
+.leftPaneBg { left: 277px; top: 512px; width: 1328px; height: 1857px; position: absolute; background: #bed6e9; border: 1px solid #021b2b; }
+
+/* Title group */
+.titleGroup { left: 315px; top: 720px; width: 454px; height: 77px; position: absolute; }
+.pkgTitle { position: absolute; left: 0; top: 0; font-family: var(--font-roboto); font-size: 27px; line-height: 31.64px; font-weight: 500; color: #0b0230; }
+.stars { position: absolute; left: 0; top: 53px; width: 92px; height: 16px; display: flex; gap: 3px; }
+.star { width: 16px; height: 16px; background: var(--color-ffba0a); border-radius: 4px; }
+.reviews { position: absolute; left: 108px; top: 49px; font-family: var(--font-roboto); font-size: 14px; line-height: 16.4px; font-weight: 500; color: rgba(0,0,0,0.8); }
+.price { position: absolute; left: 243px; top: 0; font-family: var(--font-roboto); font-size: 34px; line-height: 39.84px; font-weight: 800; color: var(--color-white); }
+.priceDivider { position: absolute; left: 349px; top: 10px; width: 11.34px; height: 29.93px; border-left: 1px solid #cac4d0; }
+.priceSub { position: absolute; left: 373px; top: 10px; font-family: var(--font-roboto); font-size: 14px; line-height: 16.4px; font-weight: 300; color: var(--color-1e1e1e); }
+
+/* Info text and KV */
+.infoSection { position: absolute; left: 0; top: 0; }
+.body { font-family: var(--font-roboto); font-size: 16px; line-height: 26px; color: var(--color-black); }
+.body1 { position: absolute; left: 315px; top: 823px; width: 762px; height: 246px; }
+
+.kv {}
+.kvKey { position: absolute; font-family: var(--font-roboto); font-size: 20px; line-height: 30px; font-weight: 700; color: #012438; }
+.kvVal { position: absolute; font-family: var(--font-roboto); font-size: 16px; line-height: 26px; color: var(--color-black); }
+
+/* Included / Not Included */
+.incTitle { position: absolute; font-family: var(--font-roboto); font-size: 20px; line-height: 30px; font-weight: 700; color: #012438; }
+.incItems { position: absolute; left: 0; top: 0; }
+.iconCircle { position: absolute; width: 16px; height: 16px; border-radius: 50%; border: 0.2px solid var(--color-black); background: var(--color-white); }
+.cross {}
+.incItem { position: absolute; font-family: var(--font-roboto); font-size: 16px; line-height: 26px; color: var(--color-black); }
+
+/* Gallery */
+.galleryHeading { position: absolute; left: 320px; top: 1713px; font-family: var(--font-roboto); font-size: 27px; line-height: 31.64px; font-weight: 500; color: var(--color-181e4b); }
+.galleryGrid .gitem { position: absolute; background: var(--color-d9d9d9); }
+
+/* Booking card */
+.bookCard { left: 1085px; top: 464px; width: 481px; height: 977px; position: absolute; }
+.bookBg { position: absolute; left: 0; top: 0; width: 481px; height: 977px; background: #010a0f; border-radius: 21px; }
+.bookTitle { position: absolute; left: 82px; top: 39px; width: 314px; height: 54px; font-family: var(--font-roboto); font-size: 42px; line-height: 54.18px; font-weight: 700; color: var(--color-181e4b); text-align: center; }
+.bookDesc { position: absolute; left: 38px; top: 102px; width: 401px; height: 76px; font-family: var(--font-roboto); font-size: 16px; line-height: 26px; color: var(--color-black); text-align: center; }
+
+.field { position: absolute; width: 359px; height: 76px; background: var(--color-white); border-radius: 21px; }
+.icon { position: absolute; width: 20px; height: 20px; background: var(--color-black); border-radius: 4px; }
+.user {} .email {} .phone {} .tags {} .message {}
+.fLabel { position: absolute; font-family: var(--font-roboto); font-size: 22px; line-height: 25.78px; font-weight: 600; color: var(--color-black); }
+
+.bookCta { width: 176.56px; height: 56.42px; background: var(--color-df6951); color: var(--color-white); border-radius: 10px; font-family: var(--font-poppins); font-size: 16.72px; font-weight: 600; line-height: 25.07px; box-shadow: 0 15.28px 26.74px rgba(223,105,81,1); border: none; }
+.check {}
+.now {}
+
+/* Footer */
+.footer { left: 277px; top: 2412px; width: 1643px; height: 484px; position: absolute; }
+.footerImg { position: absolute; left: 967px; top: -106px; width: 676px; height: 484px; background: rgba(24,20,51,0.07); }
+.footerLinks { position: absolute; left: 0; top: 94px; width: 1202px; height: 346px; }
+.footerLogo { position: absolute; left: 0; top: 0; width: 127px; height: 64px; }
+.footerLogoText { position: absolute; left: 0; top: 0; font-family: var(--font-volkhov); font-size: 31.62px; line-height: 40.79px; font-weight: 700; color: var(--color-181e4b); }
+.footerLogoArrow { position: absolute; left: 28px; top: 26px; width: 98.6px; height: 38.14px; }
+.footerCol { position: absolute; }
+.company { left: 291px; top: 21px; width: 97px; }
+.destinations { left: 525px; top: 21px; width: 132px; }
+.newsletter { left: 813px; top: 21px; width: 389px; }
+.colTitle { font-family: var(--font-manrope); font-size: 21px; font-weight: 700; line-height: 24px; color: var(--color-181433); margin-bottom: 24px; }
+.colItem { font-family: var(--font-manrope); font-size: 16px; font-weight: 500; line-height: 24px; color: var(--color-181433); margin-bottom: 18px; }
+.newsletterInput { position: relative; width: 389px; height: 52px; margin-top: 24px; }
+.newsletterBg { position: absolute; inset: 0; background: var(--color-eeeeff); }
+.newsletterPlaceholder { position: absolute; left: 15px; top: 13px; font-family: var(--font-manrope); font-size: 16px; line-height: 26px; color: var(--color-757095); opacity: .8; }
+.newsletterSubmit { position: absolute; right: 0; top: 0; width: 149px; height: 52px; background: var(--color-df6951); color: var(--color-white); border-radius: 10px; box-shadow: 0 20px 35px rgba(223,105,81,1); font-family: var(--font-poppins); font-size: 16px; font-weight: 600; border: none; }
+.newsletterNote { position: absolute; left: 0; top: 95px; width: 329px; height: 52px; font-family: var(--font-manrope); font-size: 16px; line-height: 28px; color: var(--color-757095); opacity: .5; white-space: pre-line; }
+.footerAbout { position: absolute; left: 0; top: 66px; width: 213px; }
+.aboutText { font-family: var(--font-manrope); font-size: 16px; line-height: 28px; color: var(--color-757095); }
+.socials { position: absolute; left: 0; top: 152px; width: 128px; height: 20px; display: flex; gap: 24px; }
+.soc { width: 20px; height: 20px; background: var(--color-df6951); border-radius: 50%; }
+.footerDivider { position: absolute; left: 0; top: 372px; width: 1200px; height: 2px; background: var(--color-e5e5ea); }
+.footerCopy { position: absolute; left: 456px; top: 414px; font-family: var(--font-manrope); font-size: 16px; line-height: 26px; color: var(--color-181433); }
