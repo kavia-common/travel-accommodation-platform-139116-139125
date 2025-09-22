@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/travel-accommodation-platform-139116-139125/travel_booking_frontend"
+}
